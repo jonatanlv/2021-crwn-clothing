@@ -6,6 +6,7 @@ const config = {
   apiKey: "AIzaSyCkDGiK9HMMGTEPlnJxnTRDSs3nHVayTcw",
   authDomain: "crwn-clothing-11651.firebaseapp.com",
   projectId: "crwn-clothing-11651",
+  //TODO falta la referencia a la BD
   storageBucket: "crwn-clothing-11651.appspot.com",
   messagingSenderId: "286731554721",
   appId: "1:286731554721:web:acc3ab52c659380d51c5e0",
@@ -23,3 +24,24 @@ provider.setCustomParameters({ prompt: "select_account" });
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
 export default firebase;
+
+export const createUserProfileDocument = async (userAuth, addtionalData) => {
+  if (!userAuth) return;
+
+  const userRef = firestore.doc(`users/${userAuth.uid}`);
+  const userSnap = userRef.get();
+
+  if (!userSnap.exists) {
+    const { displayName, email } = userAuth;
+    const createdAt = new Date();
+    try {
+      await userRef.set({ displayName, email, createdAt, ...addtionalData });
+    } catch (error) {
+      console.log("error creating user", error.message);
+    }
+  }
+
+  console.log(userSnap);
+
+  return userRef;
+};
