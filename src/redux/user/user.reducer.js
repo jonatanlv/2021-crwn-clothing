@@ -1,10 +1,4 @@
-class Actions {
-  static SET_CURRENT_USER = new Actions("Set current user");
-
-  constructor(name) {
-    this.name = name;
-  }
-}
+import Actions from "./user.types";
 
 const INITIAL_STATE = {
   currentUser: null,
@@ -22,5 +16,4 @@ const userReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export { Actions };
 export default userReducer;
