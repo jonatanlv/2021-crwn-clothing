@@ -1,0 +1,19 @@
+.cart-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 5px;
+
+  img {
+    width: 30%;
+  }
+
+  .item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+}
