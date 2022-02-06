@@ -14,3 +14,8 @@ export const selectCartItemsCount = createSelector(
       .map((item) => item.quantity)
       .reduce((accumulator, quantity) => accumulator + quantity, 0)
 );
+
+export const selectCartHidden = createSelector(
+  [selectCart],
+  (cart) => cart.hidden
+);
