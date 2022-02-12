@@ -17,13 +17,32 @@
     }
   }
 
+  .clear-button {
+    border: none;
+    background: none;
+    padding: 0 !important;
+  }
+
   .name,
   .quantity,
   .price {
     width: 23%;
   }
 
-  .remove-button {
+  .quantity {
+    display: flex;
+
+    .arrow {
+      cursor: pointer;
+    }
+
+    .value {
+      margin: 0 10px;
+    }
+  }
+
+  .remove {
+    margin-left: 12px;
     cursor: pointer;
   }
 }

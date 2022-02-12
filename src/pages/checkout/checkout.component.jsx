@@ -3,7 +3,6 @@ import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
-import { removeItem } from "../../redux/cart/cart.actions";
 
 import {
   selectCartItems,
@@ -12,7 +11,7 @@ import {
 
 import "./checkout.styles.scss";
 
-const CheckoutPage = ({ cartItems, total, removeItem }) => (
+const CheckoutPage = ({ cartItems, total }) => (
   <div className="checkout-page">
     <div className="checkout-header">
       <div className="header-block">
