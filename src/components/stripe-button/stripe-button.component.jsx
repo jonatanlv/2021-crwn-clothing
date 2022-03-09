@@ -1,6 +1,7 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 
+// TODO Actualizar el botón checkout de stripe: https://stripe.com/docs/payments/checkout/migration
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
   const publishableKey =
