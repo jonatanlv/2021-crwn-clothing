@@ -5,6 +5,7 @@ import CollectionsOverview from "../../components/collections-overview/collectio
 
 import CollectionPage from "../collection/collection.component";
 
+// TODO Convertir a styled components
 import "./shop.styles.scss";
 
 const ShopPage = ({ match }) => {

@@ -5,6 +5,7 @@ import CustomButton from "../custom-button/custom-button.component";
 
 import { auth, signInWithGoogle } from "../../config/firebase";
 
+// TODO Convertir a styled components
 import "./sign-in.styles.scss";
 
 class SignIn extends React.Component {

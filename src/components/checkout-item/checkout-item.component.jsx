@@ -3,6 +3,7 @@ import React from "react";
 import { addItem, clearItem, removeItem } from "../../redux/cart/cart.actions";
 import { connect } from "react-redux";
 
+// TODO Convertir a styled components
 import "./checkout-item.styles.scss";
 
 const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {

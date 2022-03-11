@@ -7,6 +7,7 @@ import CustomButton from "../custom-button/custom-button.component";
 import CartItem from "../cart-item/cart-item.component";
 import { selectCartItems } from "../../redux/cart/cart.selectors";
 
+// TODO Convertir a styled components
 import "./cart-dropdown.styles.scss";
 import { createStructuredSelector } from "reselect";
 

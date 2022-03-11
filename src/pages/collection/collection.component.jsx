@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import CollectionItem from "../../components/collection-item/collection-item.component";
 import { selectCollection } from "../../redux/shop/shop.selectors";
 
+// TODO Convertir a styled components
 import "./collection.styles.scss";
 
 const CollectionPage = ({ match, collection }) => {

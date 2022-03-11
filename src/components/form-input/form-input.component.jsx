@@ -1,5 +1,6 @@
 import React from "react";
 
+// TODO Convertir a styled components
 import "./form-input.styles.scss";
 
 const FormInput = ({ handleChange, label, ...otherProps }) => (

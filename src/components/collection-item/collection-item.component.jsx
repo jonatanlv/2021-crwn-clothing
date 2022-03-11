@@ -5,6 +5,7 @@ import { addItem } from "../../redux/cart/cart.actions";
 
 import CustomButton from "../custom-button/custom-button.component";
 
+// TODO Convertir a styled components
 import "./collection-item.styles.scss";
 
 const CollectionItem = ({ item, addItem }) => {

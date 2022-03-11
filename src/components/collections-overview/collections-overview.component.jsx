@@ -5,6 +5,7 @@ import { selectCollectionsForPreview } from "../../redux/shop/shop.selectors";
 
 import CollectionPreview from "../collection-preview/collection-preview.component";
 
+// TODO Convertir a styled components
 import "./collections-overview.styles.scss";
 
 const CollectionsOverview = ({ collections }) => (

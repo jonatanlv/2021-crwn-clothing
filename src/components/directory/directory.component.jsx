@@ -5,6 +5,7 @@ import { selectDirectorySections } from "../../redux/directory/directory.selecto
 import { createStructuredSelector } from "reselect";
 
 import MenuItem from "../menu-item/menu-item.component";
+// TODO Convertir a styled components
 import "./directory.styles.scss";
 
 const Directory = ({ sections }) => (

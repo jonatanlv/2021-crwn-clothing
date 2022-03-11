@@ -3,6 +3,7 @@ import { withRouter } from "react-router-dom";
 
 import CollectionItem from "../collection-item/collection-item.component";
 
+// TODO Convertir a styled components
 import "./collection-preview.styles.scss";
 
 const CollectionPreview = ({ title, items, history, routeName, match }) => (

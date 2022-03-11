@@ -10,6 +10,7 @@ import {
   selectCartTotal,
 } from "../../redux/cart/cart.selectors";
 
+// TODO Convertir a styled components
 import "./checkout.styles.scss";
 
 const CheckoutPage = ({ cartItems, total }) => (
