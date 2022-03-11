@@ -18,8 +18,8 @@ const StripeCheckoutButton = ({ price }) => {
       billingAddress
       shippingAddress
       currency="EUR"
-      image="http://svgshare.com/i/CUz.svg"
-      description={`Your total is €${price}`}
+      image="https://svgshare.com/i/CUz.svg"
+      description={`Your total is ${price}€`}
       amount={priceForStripe}
       panelLabel="Pay now"
       token={onToken}
